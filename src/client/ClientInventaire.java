@@ -22,7 +22,7 @@ public class ClientInventaire {
                 System.out.println("5. Quitter");
                 System.out.print("Votre choix : ");
                 choix = scanner.nextInt();
-                scanner.nextLine(); // Consommer la ligne restante
+                scanner.nextLine();
 
                 switch (choix) {
                     case 1:

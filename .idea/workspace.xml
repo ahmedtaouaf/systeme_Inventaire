@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34fb9e4b-c0a5-47ff-bc33-bfe3a4d31872" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/ClientInventaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientInventaire.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +53,7 @@
       <recent name="client" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ServeurInventaire">
+  <component name="RunManager" selected="Application.ClientInventaire">
     <configuration name="ClientInventaire" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.ClientInventaire" />
       <module name="Systeme_Inventaire" />
@@ -81,8 +82,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ServeurInventaire" />
         <item itemvalue="Application.ClientInventaire" />
+        <item itemvalue="Application.ServeurInventaire" />
       </list>
     </recent_temporary>
   </component>
@@ -95,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1734686556013</updated>
       <workItem from="1734686556997" duration="28000" />
-      <workItem from="1734686597570" duration="6082000" />
+      <workItem from="1734686597570" duration="8005000" />
     </task>
     <servers />
   </component>

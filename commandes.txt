@@ -1,0 +1,5 @@
+# Lancement du serveur RMI avec spécification du Driver JBDC mySQL :
+
+java -cp .;../lib/mysql-connector-j-8.0.31.jar serveur.ServeurInventaire
+
+# Lancement du client depuis le class main ClientInventaire
