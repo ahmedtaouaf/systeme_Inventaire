@@ -1,3 +1,8 @@
+# Compilation des fichiers class java et les mettres dans un dossier 'out' avec la commande suivante : 
+
+javac -d out src/client/ClientInventaire.java src/serveur/ServeurInventaire.java src/serveur/InterfaceInventaire.java src/serveur/DAO/ProduitDAO.java src/serveur/DAO/JDBCUtil.java
+
+
 # Lancement du serveur RMI avec spécification du Driver JBDC mySQL dans la meme chemin :
 
 rmiregistry
