@@ -1,4 +1,6 @@
-# Lancement du serveur RMI avec spécification du Driver JBDC mySQL :
+# Lancement du serveur RMI avec spécification du Driver JBDC mySQL dans la meme chemin :
+
+rmiregistry
 
 java -cp .;../lib/mysql-connector-j-8.0.31.jar serveur.ServeurInventaire
 

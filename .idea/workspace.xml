@@ -7,6 +7,9 @@
     <list default="true" id="34fb9e4b-c0a5-47ff-bc33-bfe3a4d31872" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/ClientInventaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientInventaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serveur/DAO/ProduitDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serveur/DAO/ProduitDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serveur/InterfaceInventaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serveur/InterfaceInventaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serveur/ServeurInventaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serveur/ServeurInventaire.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,11 +99,26 @@
       <option name="presentableId" value="Default" />
       <updated>1734686556013</updated>
       <workItem from="1734686556997" duration="28000" />
-      <workItem from="1734686597570" duration="8005000" />
+      <workItem from="1734686597570" duration="15309000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/client/ClientInventaire.java</url>
+          <line>8</line>
+          <properties class="client.ClientInventaire" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -26,6 +26,18 @@ public class ServeurInventaire extends UnicastRemoteObject implements InterfaceI
         return produitDAO.rechercherProduits(categorie);
     }
 
+    @Override
+    public List<String> afficherProduits() throws RemoteException {
+        return produitDAO.afficherProduits();
+    }
+
+    @Override
+    public void modifierProduit(int id, String nom, String categorie, int quantite, double prix) throws RemoteException {
+        produitDAO.modifierProduit(id, nom, categorie, quantite, prix);
+    }
+
+
+
     public static void main(String[] args) {
         try {
             Naming.rebind("rmi://localhost:1099/inventaire", new ServeurInventaire());
@@ -34,4 +46,5 @@ public class ServeurInventaire extends UnicastRemoteObject implements InterfaceI
             e.printStackTrace();
         }
     }
+
 }

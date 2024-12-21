@@ -1,9 +1,6 @@
 package serveur.DAO;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,5 +51,42 @@ public class ProduitDAO {
             e.printStackTrace();
         }
         return produits;
+    }
+
+    public List<String> afficherProduits() {
+        List<String> produits = new ArrayList<>();
+        try (Connection conn = JDBCUtil.getConnection();
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery("SELECT * FROM produits")) {
+
+            while (rs.next()) {
+                produits.add("ID: " + rs.getInt("id") +
+                        ", Nom: " + rs.getString("nom") +
+                        ", Catégorie: " + rs.getString("categorie") +
+                        ", Quantité: " + rs.getInt("quantite") +
+                        ", Prix: " + rs.getDouble("prix"));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return produits;
+    }
+    public void modifierProduit(int id, String nom, String categorie, int quantite, double prix) {
+        String sql = "UPDATE produits SET nom = ?, categorie = ?, quantite = ?, prix = ? WHERE id = ?";
+
+        try (Connection conn = JDBCUtil.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+            stmt.setString(1, nom);
+            stmt.setString(2, categorie);
+            stmt.setInt(3, quantite);
+            stmt.setDouble(4, prix);
+            stmt.setInt(5, id);
+
+            stmt.executeUpdate();
+            System.out.println("Produit mis à jour avec succès !");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
