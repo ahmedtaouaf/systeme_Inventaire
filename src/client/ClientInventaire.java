@@ -97,7 +97,7 @@ public class ClientInventaire {
         try {
             System.out.print("ID du produit a modifier : ");
             int id = scanner.nextInt();
-            scanner.nextLine(); // Consommer la ligne restante
+            scanner.nextLine();
 
             System.out.print("Nouveau nom du produit : ");
             String nom = scanner.nextLine();
@@ -110,7 +110,7 @@ public class ClientInventaire {
 
             System.out.print("Nouveau prix : ");
             double prix = scanner.nextDouble();
-            scanner.nextLine(); // Consommer la ligne restante
+            scanner.nextLine();
 
             inventaire.modifierProduit(id, nom, categorie, quantite, prix);
             System.out.println("Produit modifie avec succes !");

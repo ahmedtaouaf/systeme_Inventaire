@@ -11,7 +11,4 @@ public interface InterfaceInventaire extends Remote {
     List<String> afficherProduits() throws RemoteException;
     void modifierProduit(int id, String nom, String categorie, int quantite, double prix) throws RemoteException;
 
-
-
-
 }

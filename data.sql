@@ -1,13 +1,15 @@
 -- Listage des données de la table inventaire.produits : ~7 rows (environ)
-REPLACE INTO `produits` (`id`, `nom`, `categorie`, `quantite`, `prix`) VALUES
-	(2, 'Produit1', 'Catégorie1', 10, 99.99),
-	(3, 'Produit1', 'Catégorie1', 10, 99.99),
-	(4, 'Produit1', 'CatÃ©gorie1', 10, 99.99),
-	(5, 'Produit1', 'CatÃ©gorie1', 10, 99.99),
-	(6, 'ahmed', 'ahmed', 2, 100),
-	(7, 'maticha', 'maticha', 2, 10),
-	(8, 'aaaa', 'tttt', 10, 200),
-	(9, '2', '2', 1, 100);
+INSERT INTO `produits` (`id`, `nom`, `categorie`, `quantite`, `prix`) VALUES
+	(1, 'Ordinateur Portable', 'Électronique', 15, 1200),
+	(2, 'Clavier Mécanique', 'Accessoires', 30, 80.5),
+	(3, 'Casque Audio', 'Audio', 20, 150),
+	(4, 'Télévision 4K', 'Électronique', 10, 2500),
+	(5, 'Souris', 'Accessoires', 50, 45.99),
+	(6, 'Imprimante Laser', 'Bureau', 12, 300),
+	(7, 'Tablette Graphique', 'Créatif', 8, 400),
+	(8, 'Smartphone', 'Électronique', 25, 800),
+	(9, 'Chargeur Universel', 'Accessoires', 40, 25),
+	(10, 'Chaise de Bureau', 'Bureau', 18, 200);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

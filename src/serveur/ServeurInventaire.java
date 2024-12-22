@@ -41,7 +41,7 @@ public class ServeurInventaire extends UnicastRemoteObject implements InterfaceI
     public static void main(String[] args) {
         try {
             Naming.rebind("rmi://localhost:1099/inventaire", new ServeurInventaire());
-            System.out.println("Serveur RMI démarré...");
+            System.out.println("Serveur RMI Demarre Avec Success...");
         } catch (Exception e) {
             e.printStackTrace();
         }
